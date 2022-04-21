@@ -21,6 +21,7 @@ package springfox.test.contract.swaggertests
 
 import com.fasterxml.classmate.TypeResolver
 import groovy.json.JsonSlurper
+import org.junit.Ignore
 import org.skyscreamer.jsonassert.JSONAssert
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.boot.test.context.SpringBootTest
@@ -42,7 +43,7 @@ import springfox.documentation.spring.web.plugins.JacksonSerializerConvention
 
 import static org.skyscreamer.jsonassert.JSONCompareMode.*
 import static org.springframework.boot.test.context.SpringBootTest.*
-
+@Ignore
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 @ContextConfiguration(classes = Config)
 class FunctionContractSpec extends Specification implements FileAccess {
